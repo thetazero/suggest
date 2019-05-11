@@ -1,0 +1,42 @@
+body {
+    --theme: 150;
+    --text: #ccc;
+    background: hsl(var(--theme), 10%, 20%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.notepad {
+    background: hsl(var(--theme), 15%, 15%);
+    width: 60vw;
+    height: calc(60vw * 1.4096385542168675);
+    color: var(--text);
+    margin: 5% 20vw;
+    padding: 30px 30px;
+}
+
+.line {
+    padding: 2px;
+}
+
+.line::before {
+    display: inline-block;
+    width: 35px;
+    content: "";
+    height: 18px;
+}
+
+.line:focus {
+    background: hsl(var(--theme), 15%, 12%);
+    outline: none;
+}
+
+.edit {
+    display: inline-block;
+    outline: none;
+    min-height: 22px;
+    min-width: 5px;
+}
+
+.sug {
+    color: #aaa;
+}
